@@ -2,8 +2,8 @@ import { useState } from "react"
 import Navbar from "./Components/Navbar"
 import NewsBoard from "./Components/NewsBoard"
 const App = () => {
-  const [country,setCountry]=useState("us")
-  const [category,setCategory] = useState("general")
+  const [country,setCountry]=useState("")
+  const [category,setCategory] = useState("")
   return (
     <div>
       <Navbar setCategory={setCategory} setCountry={setCountry}/>
