@@ -8,7 +8,7 @@ const NewsBoard = ({category,country}) => {
     useEffect(()=>{
         let url = ` https://newsapi.org/v2/top-headlines?country=${country}&category=${category}&apiKey=${import.meta.env.VITE_API_KEY}`;
         fetch(url).then(response => response.json()).then(data=>setArticles(data.articles))
-        console.log("hi");
+        
     },[category,country])
 
   return (
